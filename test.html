@@ -7,6 +7,93 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Тест на знання електромобілів</h1>
+    <h1>Ринок електромобілів</h1>
+    <h2>Соціологічне опитування, яке допоможе нам краще зрозуміти структуру ринку електромобілів в Україні</h2>
+    <p>Опитування не займе більше 5 хвилин Вашого часу та є цілком анонімним</p>
+    <form method="POST" action="https://formspree.io/oleh.zaslavskyy@gmail.com">
+        <label>1. Вкажіть ваш вік:</label>
+        <label>
+            <input type="radio" name="age" value="18-25">18-25
+        </label>
+        <label>
+            <input type="radio" name="age" value="25-35">25-35
+        </label>
+        <label>
+            <input type="radio" name="age" value="35-45">35-45
+        </label>
+        <label>
+            <input type="radio" name="age" value="45-60">45-60
+        </label>
+        <br>
+        <label>2. Ваша стать:
+            <input type="radio" name="gender" value="male">Чоловік
+        </label>
+        <label>
+            <input type="radio" name="gender" value="female">Жінка
+        </label>
+        <br>
+        <label for="income">3. Вкажіть орієнтовний щомісячний дохід Вашої сім'ї, тис. грн.</label>
+            <input type="text" name="income" id="income">
+        <br>
+        <label>4. Чи є у Вас/вашої сім'ї автомобіль?
+            <input type="radio" name="сar" value="yes">Так
+        </label>
+        <label>
+            <input type="radio" name="car" value="no">Ні
+        </label>
+        <br>
+        <label>5. Який тип автомобіля (якщо автомобілів декілька - вкажіть кількість)
+            <br>
+            <input type="checkbox" name="typeofcar" value="diesel">Дизель </label>
+             <label><input type="text" name="numdisel" id="numdisel"> </label>
+            <br>
+             <label>
+                 <input type="checkbox" name="typeofcar" value="gasoline">Бензин
+             </label>
+             <label><input type="text" name="numgasoline" id="numgasoline">
+              </label>
+             <br>
+             <label>
+                 <input type="checkbox" name="typeofcar" value="gas">Газ
+             </label>
+             <label>
+                 <input type="text" name="numgas" id="numgas">
+             </label>
+            <br>
+             <label>
+                 <input type="checkbox" name="typeofcar" value="electric">Електро
+             </label>
+             <label>
+                 <input type="text" name="numelectric" id="numelectric">
+             </label>
+            <br>
+             <label>
+            <input type="checkbox" name="typeofcar" value="hybrid">Гібрид
+             </label>
+             <label>
+                 <input type="text" name="numhybrid" id="numhybrid">
+             </label>
+             <br>
+             <label>
+                 <input type="checkbox" name="typeofcar" value="other">Інший
+             </label>  
+             <label>
+                 <input type="text" name="numother" id="numother">
+            </label>
+        <br>
+        <label>6. Чи плануєте придбати електромобіль в найближчі 3 роки?
+            <input type="radio" name="buy" value="yes">Так
+        </label>
+        <label>
+            <input type="radio" name="buy" value="no">Ні
+        </label>
+        <br>
+        <label>Вкажіть Ваш е-mail (для захисту від автоматичного заповнення форм)
+            <input type="email" name="email" required>
+        </label>
+        <br>
+        <input type="submit">
+        <input type="reset">
+    </form>
 </body>
 </html>
